@@ -1,12 +1,9 @@
 package com.example.mobile.Model;
-
 /**
  * Created by Jacek on 2018-09-19.
  */
-
 public class Model implements ILoginModel {
     Telegram telegram;
-
     @Override
     public boolean setLogin(String login) {
         if (validateLogin(login)){
@@ -18,5 +15,6 @@ public class Model implements ILoginModel {
     }
     private boolean validateLogin(String login){
         return true;
+
     }
 }
