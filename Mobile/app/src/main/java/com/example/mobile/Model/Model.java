@@ -4,6 +4,9 @@ package com.example.mobile.Model;
  */
 public class Model implements ILoginModel {
     Telegram telegram;
+    public Model(){
+        telegram = new Telegram();
+    }
     @Override
     public boolean setLogin(String login) {
         if (validateLogin(login)){
