@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
-
+repositories {
+    maven {
+        url "http://mbulatek.nazwa.pl/"
+    }
+}
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.2"
@@ -26,5 +30,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    apply plugin: 'maven'
+    compile group: 'com.rookies.grzeda', name: 'grzeda-messaging', version: '0.0.1-SNAPSHOT'
     testCompile 'junit:junit:4.12'
 }
